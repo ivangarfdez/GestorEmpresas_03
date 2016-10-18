@@ -1,0 +1,7 @@
+generador_homepage:
+    path:     /
+    defaults: { _controller: generadorBundle:Default:index }
+
+all_empresa:
+    path:     /empresa/all
+    defaults: { _controller: generadorBundle:Empresa:all }

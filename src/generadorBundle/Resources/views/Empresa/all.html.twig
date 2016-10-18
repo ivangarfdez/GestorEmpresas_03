@@ -1,0 +1,32 @@
+<link href="{{ asset('/css/style.css') }}" rel="stylesheet"/>
+<!--
+Bootstrap
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ http://localhost:8000/prueba/empresa/all
+
+ -->
+
+<table>
+    <tr>
+        <td>#</td>
+        <td>Nombre</td>
+        <td>Dirección</td>
+        <td>Código Postal</td>
+        <td>Teléfono 1</td>
+        <td>Teléfono 2</td>
+        <td>Fecha de Creación</td>
+    </tr>
+    {% for emrpresa_f_c_t in emrpresa_f_c_t %}
+        <tr>
+            <td>{{ emrpresa_f_c_t.id }}</td>
+            <td>{{ emrpresa_f_c_t.nombre }}</td>
+            <td>{{ emrpresa_f_c_t.direccion }}</td>
+            <td>{{ emrpresa_f_c_t.cp }}</td>
+            <td>{{ emrpresa_f_c_t.telefono1 }}</td>
+            <td>{{ emrpresa_f_c_t.telefono2 }}</td>
+            <td>{{ emrpresa_f_c_t.fecha.date }}</td>
+        </tr>
+    {% endfor %}
+</table>

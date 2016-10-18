@@ -1,0 +1,16 @@
+body{
+    background-color: #434955;
+    text-align: center;
+    color:white;
+}
+
+table{
+    text-align: center;
+    border: 1px solid black;
+}
+
+td{
+    border: 2px solid white;
+    width: 200px;
+}
+
